@@ -1,0 +1,8 @@
+(define RLZ (lambda (L)
+              (if (or (null? L) (not(equal? (car L) 0)))
+                  L
+                  (RLZ (cdr L))
+                  )
+
+              ))
+

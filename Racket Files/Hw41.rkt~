@@ -1,0 +1,20 @@
+;Jeffrey Weng
+;mcjeffrey168@gmail.com
+
+;1 Access each element
+
+(define Neil '(one small step for man))
+(display (car Neil)) (newline)
+(display (cadr Neil)) (newline)
+(display (caddr Neil)) (newline)
+(display (cadddr Neil)) (newline)
+(display (car(cddddr Neil))) (newline)
+
+;2 help
+
+(define helped (append (list(car Neil)) (list(cadr Neil))
+                       (list(caddr Neil)) (list(cadddr Neil)) '(a) (cddddr Neil)))
+
+(display helped ) (newline)
+(display " ...should be(one small step for a man)") (newline)
+
